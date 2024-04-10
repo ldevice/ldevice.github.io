@@ -1,20 +1,26 @@
 /* Устанавливаем фоновое видео */
-.bg-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-overflow: hidden;
-}
+    .bg-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 1; /* При необходимости можно отрегулировать прозрачность */
-}
+    iframe {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
 
-/* Центрируем контент вертикально и горизонтально */
+    /* Добавляем оверлей */
+    .overlay-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+}
 .content-wrap {
   position: absolute;
   top: 50%;
